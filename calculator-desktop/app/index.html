@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap Makinesi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="secondaryBar">
+    <div class="burgerAndHeading">
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <h3>Standart</h3>
+    </div>
+    <button id="toggle-history">
+      <i class="fa-solid fa-clock-rotate-left"></i>
+    </button>
+  </header>
+
+  <section class="input-group">
+    <div id="history" class="history"></div>
+    <input type="text" id="cal" readonly>
+  </section>
+
+  <nav class="modes">
+    <button data-action="MC" class="de-active">MC</button>
+    <button data-action="MR" class="de-active">MR</button>
+    <button data-action="M+" class="active">M+</button>
+    <button data-action="M-" class="active">M-</button>
+    <button data-action="MS" class="active">MS</button>
+    <button data-action="MDropdown" class="de-active">M<sup><i class="fa-solid fa-chevron-down"></i></sup></button>
+  </nav>
+  <div class="overlay" id="memory-overlay"></div>
+  <div class="memory-container" id="memory-container">
+    <ul id="memory-list"></ul>
+    <div class="memory-footer">
+      <button id="clear-memory" class="clear-btn">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+  </div>
+  <div class="overlay" id="history-overlay"></div>
+  <div class="history-container" id="history-container">
+    <p id="empty-history" class="empty-message">Henüz geçmiş yok.</p>
+    <ul id="history-list"></ul>
+    <div class="history-footer">
+      <button id="clear-history" class="clear-btn">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+  </div>
+  <section class="topOperations">
+    <button>%</button>
+    <button>CE</button>
+    <button>C</button>
+    <button><i class="fa-solid fa-delete-left"></i></button>
+    <button>1/x</button>
+    <button>x²</button>
+    <button>√x</button>
+    <button>÷</button>
+  </section>
+  <section class="numbersAndBasicOperations">
+    <button class="number">7</button>
+    <button class="number">8</button>
+    <button class="number">9</button>
+    <button>×</button>
+    <button class="number">4</button>
+    <button class="number">5</button>
+    <button class="number">6</button>
+    <button>-</button>
+    <button class="number">1</button>
+    <button class="number">2</button>
+    <button class="number">3</button>
+    <button>+</button>
+    <button>±</button>
+    <button class="number">0</button>
+    <button>,</button>
+    <button>=</button>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
