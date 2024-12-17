@@ -13,7 +13,7 @@ app.on("ready", () => {
     },
   });
 
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("./app/index.html");
   mainWindow.setMenuBarVisibility(false);
 
   mainWindow.on("closed", () => {
@@ -38,6 +38,6 @@ app.on("activate", () => {
       },
     });
 
-    mainWindow.loadFile("index.html");
+    mainWindow.loadFile("./app/index.html");
   }
 });

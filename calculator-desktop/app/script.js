@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         break;
       default:
-        console.warn("Bilinmeyen action:", action);
+        break;
     }
   };
 
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
       case "×":
         return a * b;
       case "÷":
-        return b !== 0 ? a / b : "Hata";
+        return b !== 0 ? a / b : "Sıfıra Bölünemez";
       default:
         return b;
     }
