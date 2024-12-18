@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require("electron");
+const path = require("path");
 
 let mainWindow;
 
@@ -7,6 +8,7 @@ app.on("ready", () => {
     width: 480,
     height: 670,
     resizable: true,
+    icon: path.join(__dirname, "assets", "icon.ico"),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -32,6 +34,7 @@ app.on("activate", () => {
     mainWindow = new BrowserWindow({
       width: 600,
       height: 800,
+      icon: path.join(__dirname, "assets", "icon.ico"),
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,

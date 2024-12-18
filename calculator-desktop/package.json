@@ -4,6 +4,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,7 +14,19 @@
   "dependencies": {
     "calculator-desktop": "file:"
   },
+  "build": {
+    "appId": "com.calculator",
+    "productName": "Hesap Makinesi",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  },
   "devDependencies": {
-    "electron": "^33.2.1"
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
   }
 }

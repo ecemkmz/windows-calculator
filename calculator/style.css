@@ -93,6 +93,17 @@ body {
   cursor: pointer;
 }
 
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-icon {
+  width: 15px;
+  height: 15px;
+}
+
 .burger {
   display: flex;
   flex-direction: column;
