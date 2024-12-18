@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("cal");
-  const historyField = document.getElementById("history");
+  const historyField = document.querySelector(".history");
   const buttons = document.querySelectorAll(
     ".numbersAndBasicOperations button, .topOperations button"
   );
   const backspaceButton = document.querySelector(".fa-delete-left");
   const historyOverlay = document.getElementById("history-overlay");
-  const historyContainer = document.getElementById("history-container");
-  const toggleHistoryBtn = document.getElementById("toggle-history");
+  const historyContainer = document.querySelector(".history-container");
+  const toggleHistoryBtn = document.querySelector(".toggle-history");
   const clearHistoryBtn = document.getElementById("clear-history");
-  const historyList = document.getElementById("history-list");
+  const historyList = document.querySelector(".history-list");
   const modeButtons = document.querySelectorAll(".modes button");
-  const mcButton = document.querySelector(".modes button:nth-child(1)");
-  const mrButton = document.querySelector(".modes button:nth-child(2)");
-  const mPlusButton = document.querySelector(".modes button:nth-child(3)");
-  const mMinusButton = document.querySelector(".modes button:nth-child(4)");
-  const msButton = document.querySelector(".modes button:nth-child(5)");
-  const mDropdownButton = document.querySelector(".modes button:nth-child(6)");
+  const [
+    mcButton,
+    mrButton,
+    mPlusButton,
+    mMinusButton,
+    msButton,
+    mDropdownButton,
+  ] = modeButtons;
   const memoryOverlay = document.getElementById("memory-overlay");
-  const memoryContainer = document.getElementById("memory-container");
-  const memoryList = document.getElementById("memory-list");
+  const memoryContainer = document.querySelector(".memory-container");
+  const memoryList = document.querySelector(".memory-list");
   const clearMemoryBtn = document.getElementById("clear-memory");
-  const emptyHistoryMessage = document.getElementById("empty-history");
+  const emptyHistoryMessage = document.querySelector(".empty-message");
 
   let currentInput = "";
   let previousInput = "";

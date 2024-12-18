@@ -53,7 +53,7 @@ body {
   margin-left: 15px;
 }
 
-#toggle-history {
+.toggle-history {
   font-size: 18px;
   border: none;
   background: none;
@@ -67,7 +67,7 @@ body {
   cursor: pointer;
 }
 
-.burger .line {
+.burger p {
   width: 15px;
   height: 1px;
   margin: 2px 0;

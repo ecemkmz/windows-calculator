@@ -11,19 +11,17 @@
   <header class="secondaryBar">
     <div class="burgerAndHeading">
       <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <i class="fa-solid fa-bars"></i>
       </div>
       <h3>Standart</h3>
     </div>
-    <button id="toggle-history">
+    <button class="toggle-history">
       <i class="fa-solid fa-clock-rotate-left"></i>
     </button>
   </header>
 
   <section class="input-group">
-    <div id="history" class="history"></div>
+    <div class="history"></div>
     <input type="text" id="cal" readonly>
   </section>
 
@@ -36,8 +34,8 @@
     <button data-action="MDropdown" class="de-active">M<sup><i class="fa-solid fa-chevron-down"></i></sup></button>
   </nav>
   <div class="overlay" id="memory-overlay"></div>
-  <div class="memory-container" id="memory-container">
-    <ul id="memory-list"></ul>
+  <div class="memory-container">
+    <ul class="memory-list"></ul>
     <div class="memory-footer">
       <button id="clear-memory" class="clear-btn">
         <i class="fa-regular fa-trash-can"></i>
@@ -45,9 +43,9 @@
     </div>
   </div>
   <div class="overlay" id="history-overlay"></div>
-  <div class="history-container" id="history-container">
-    <p id="empty-history" class="empty-message">Henüz geçmiş yok.</p>
-    <ul id="history-list"></ul>
+  <div class="history-container">
+    <p class="empty-message">Henüz geçmiş yok.</p>
+    <ul class="history-list"></ul>
     <div class="history-footer">
       <button id="clear-history" class="clear-btn">
         <i class="fa-regular fa-trash-can"></i>
